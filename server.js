@@ -29,7 +29,7 @@ connection.sync().then(()=>{
   });
 }).catch(err=>console.log(err));
  
-
+  
 // получение данных
 app.get("/", function(req, res){
   Notes.findAll({raw: true }).then(data=>{
